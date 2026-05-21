@@ -186,7 +186,7 @@ impl PdfAnnotation {
     }
 
     pub fn rect(&self) -> Result<Rect, Error> {
-        unsafe { ffi_try!(mupdf_pdf_annot_rect(context(), self.inner)) }.map(Into::into)
+        unsafe { ffi_try!(mupdf_pdf_annot_rect(context(), self.inner.as_ptr())) }.map(Into::into)
     }
 
     pub fn author(&self) -> Result<Option<&str>, Error> {
