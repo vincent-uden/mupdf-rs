@@ -134,7 +134,7 @@ fn build_wrapper(target: &Target) -> Result<()> {
     if target.os == "android" {
         build.define("HAVE_ANDROID", None);
     }
-    build.try_compile("mupdf-wrapper")?;
+    build.try_compile("mupdf-wrapper-miro-dev")?;
     Ok(())
 }
 

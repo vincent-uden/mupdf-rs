@@ -1,5 +1,5 @@
 [package]
-name = "mupdf-sys"
+name = "mupdf-sys-miro-dev"
 version.workspace = true
 edition.workspace = true
 include = [
@@ -182,7 +182,7 @@ include = [
 description = "Rust FFI binding to MuPDF"
 keywords = ["pdf", "mupdf"]
 license = "AGPL-3.0"
-links="mupdf-wrapper"
+links="mupdf-wrapper-miro-dev"
 repository = "https://github.com/messense/mupdf-rs"
 
 [features]
